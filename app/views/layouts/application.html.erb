@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <title>Therfield Village Pre-school</title>
+  <link rel="Stylesheet" href="/stylesheets/default.css" type="text/css" media="screen" />
+</head>
+
+<body id="NoBlend" class="overview">
+
+<div class="Container">
+  <div id="Header">
+    <div id="Nav">
+      <a href="/curriculum">Our Curriculum</a> |
+      <a href="/team">Our Team</a> |
+      <a href="/fees">Fees and Hours</a> |
+      <a href="/events">Upcoming Events</a> |
+      <a href="/community">Community</a> |
+      <% if logged_in? %>
+        <span>
+          Logged in as <%= current_user.login %>.
+          <a href="/logout">Logout</a>
+        </span>
+      <% else %>
+        <a href="/login">Login</a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="message">
+    <img src="/images/logo.png" width="230" height="120" alt="Therfield Village Pre-school" />
+  </div>
+</div>
+
+<div class="content">
+  <%= yield %>
+</div>
+
+<br clear="all" />
+
+<div class="copyright">
+    <p>Therfield Village Pre-school is a registered charity in England. Registered charity number 1086252.</p>
+    <p>Fordham Memorial Hall, Church Lane, Therfield.</p>
+</div>
+
+</body>
