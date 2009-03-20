@@ -1,0 +1,9 @@
+== Preschool CMS
+
+Preschool CMS is a simple rails web application that allows you to create a simple web presence for a Preschool website. It was created for Therfield Village Preschool, Royston, with the following principles
+
+* _Robust_. With BDD methodology applied and 100% rspec coverage
+* _Pretty_. A lot of preschool websites are not pretty. The basic site should be attractive
+* _Easy to edit_. The administrator interface is embedded within the web application meaning no separate complex administrator interface
+
+As the Therfield site grows features will be added. Currently it is a very simple, but functional, Rails application that allows you to edit news
